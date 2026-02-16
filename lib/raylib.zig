@@ -1662,7 +1662,7 @@ pub const AutomationEventList = extern struct {
     }
 };
 
-pub const ConfigFlags = packed struct {
+pub const ConfigFlags = packed struct(u32) {
     __reserved: bool = false,
     fullscreen_mode: bool = false,
     window_resizable: bool = false,
